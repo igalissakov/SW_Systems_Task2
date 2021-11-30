@@ -4,7 +4,7 @@
 int main()
 {
     char a;
-    scanf("%c", &a);
+    scanf(" %c", &a);
     int matrix[n][n];
     while ('D' != a)
     {
@@ -12,15 +12,15 @@ int main()
         {
         case 'A':
             getMatrix(matrix);
-            scanf("%c", &a);
+            scanf(" %c", &a);
             break;
         case 'B':
             isRoute(matrix);
-            scanf("%c", &a);
+            scanf(" %c", &a);
             break;
         case 'C':
             printShortPath(matrix);
-            scanf("%c", &a);
+            scanf(" %c", &a);
             break;
         default:
             return 0;
